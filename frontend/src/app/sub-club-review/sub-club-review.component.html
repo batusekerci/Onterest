@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<a routerLink="/message" routerLinkActive="active"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+
+<section class="reviews">
+    <!-- aLT Klüp reviewları buraya çekilecek -->
+
+    <h1>Sub-club Reviews</h1>
+    <fieldset class="review1">
+        <div class="rectangle"> Review </div>
+        <i class="fa fa-star">4/5</i>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+    </fieldset>
+    <fieldset class="review2">
+        <div class="rectangle"> Review </div>
+        <i class="fa fa-star">2/5</i>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+    </fieldset>
+</section>
+<section class="writeReview">
+    <form novalidate [formGroup]="subClubReviewForm" #subClubRevForm="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="review">
+            <label>
+                Write Review<br>
+                <textarea name="reviewText" matInput formControlName="subReview" rows="5" cols="60" required></textarea>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="rate">
+            <label for="rate">How would you rate this sub-club out of 5?<br>
+                <mat-select id="rate" name="rater" required>
+                    <option value="" disabled selected></option>
+                    <option value="very bad">One Star</option>
+                    <option value="bad">Two Star</option>
+                    <option value="moderate">Three Star</option>
+                    <option value="good">Four Star</option>
+                    <option value="very good">Five Star</option>
+                </mat-select>
+            </label>
+        </mat-form-field>
+        <fieldset class="send">
+            <input class="btn" type="submit" name="request" value="send review">
+        </fieldset>
+    </form>
+</section>

@@ -1,0 +1,34 @@
+<img src="https://i.imgur.com/WJ8ZHvz.png" src="../../assets/images/logo.png"
+  style="position:absolute; top:50px; left: 615px;" />
+<form novalidate [formGroup]="loginForm" #lform="ngForm" (ngSubmit)="onSubmit()">
+
+
+  <br><br><br>
+  <h1>Welcome to onterest!</h1>
+  <mat-form-field class="account-info">
+
+    <label>
+      username
+      <br><input matInput type="text" name="username" formControlName="username" required>
+    </label><br>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="account-info">
+    <label>
+      password
+      <br> <input matInput type="password" name="password" formControlName="password" required>
+    </label><br>
+  </mat-form-field>
+  <br><br><br>
+  <fieldset class="account-action">
+    <h2>
+      New here? <a routerLink="/signup" routerLinkActive="active" style="color:#A5BEFF">Sign up!</a>
+    </h2>
+  </fieldset>
+  <h3 style="text-align: center;"> <a routerLink="/forgotpass" routerLinkActive="active" style="color:#A5BEFF"> Forgot
+      password?</a></h3>
+
+  <fieldset class="account-action">
+    <button type="submit" mat-button class="btn" value="Log in">Log in</button>
+  </fieldset>
+</form>

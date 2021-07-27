@@ -1,0 +1,190 @@
+
+    .fa-home {
+      position: absolute;
+      left: 140px;
+      top: 45px;
+      color: #A5BEFF;
+      font-size: 25px;
+    }
+    .fa-question {
+      position: absolute;
+      left: 190px;
+      top: 45px;
+      color: #A5BEFF;
+      font-size: 25px;
+    }
+    .search-form {
+      position: absolute;
+      top: 40px;
+      left: 230px;
+    }
+    .search-form input {
+      font-family: Spartan,serif;
+      font-size: 15px;
+      width: 230px;
+      height: 30px;
+      display: inline-block;
+      border: none;
+      background-color: #F3F6F9;
+      border-radius: 10px;
+    }
+    .fa-envelope-o {
+      position: absolute;
+      left: 1550px;
+      top: 45px;
+      color: #A5BEFF;
+      font-size: 25px;
+    }
+    .fa-gear {
+      position: absolute;
+      left: 1600px;
+      top: 45px;
+      color: #A5BEFF;
+      font-size: 25px;
+    }
+    div.username {
+      position: absolute;
+      left: 1650px;
+      top: 45px;
+      color: black;
+      font-family: Spartan,serif;
+      font-size: 22px;
+    }
+    .fa-exclamation-circle {
+      position: absolute;
+      left: 140px;
+      top: 850px;
+      color: red;
+      font-size: 25px;
+    }
+    div.top {
+      position: absolute;
+      top: 80px;
+      left: 130px;
+    }
+
+    section {
+      margin: 100px 0 0 100px;
+      font-family: Spartan,serif;
+      background-color:white;
+      overflow: hidden;
+    }
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      position: absolute;
+      top:150px;
+      left: 250px;
+      font-family: Spartan,serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 43px;
+      color: #A5BEFF;
+    }
+    section.sub-clubs{
+      margin: 300px 0 0 300px;
+    }
+    .sub-club1 .square {
+      height: 330px;
+      width: 330px;
+      background-color: #fca5ff;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 20px;
+      border-color: #fca5ff;
+      display: inline-flex;
+      align-items: flex-start;
+      font-family: Spartan,serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      color: white;
+    }
+    .sub-club1 .fa-star{
+      position:absolute;
+      top:630px;
+      left:640px;
+      font-size: 25px;
+      color: yellow;
+    }
+    .sub-club2 {
+      margin: -370px 0 0 500px;
+    }
+    .sub-club2 .square {
+      height: 330px;
+      width: 330px;
+      background-color: #ffa5a5;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 20px;
+      border-color: #ffa5a5;
+      display: inline-flex;
+      align-items: flex-start;
+      font-family: Spartan,serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      color: white;
+    }
+    .sub-club2 .fa-star{
+      position:absolute;
+      top:630px;
+      left:1140px;
+      font-size: 25px;
+      color: yellow;
+    }
+
+    .sub-club3 {
+      margin: -370px 0 0 1000px;
+    }
+    .sub-club3 .square {
+      height: 330px;
+      width: 330px;
+      background-color: #b8ffa5;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 20px;
+      border-color: #b8ffa5;
+      display: inline-flex;
+      align-items: flex-start;
+      font-family: Spartan,serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      color: white;
+    }
+
+    .sub-club3 .fa-star{
+      position:absolute;
+      top:630px;
+      left:1640px;
+      font-size: 25px;
+      color: yellow;
+    }
+
+    .request{
+      position: absolute;
+      top: 750px;
+      left: 1470px;
+    }
+    .request .button{
+      height: 20px;
+      width: 170px;
+      background-color: #A5BEFF;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 20px;
+      border-color: #A5BEFF;
+      display: inline-block;
+      font-family: Spartan,serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      color: white;
+    }
+
+
+  

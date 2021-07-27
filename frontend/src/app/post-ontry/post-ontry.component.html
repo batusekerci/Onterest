@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a routerLink="/clubDashboard" routerLinkActive="active"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+
+<form class="search-form" action="search">
+    <input matInput type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<a routerLink="/message" routerLinkActive="active"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+
+<section class="form">
+    <form novalidate [formGroup]="postOntryForm" #pOntryForm="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="title">
+            <h1>Ontry</h1><br>
+            <label>
+                Title
+                <br><input matInput formControlName="title" type="text" name="title" required>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="ontry">
+            <label>
+                Enter your ontry here<br>
+                <textarea matInput formControlName="body" name="ontry" rows="5" cols="60" required></textarea>
+            </label>
+        </mat-form-field>
+
+        <h2> You should be careful about not using slang words.</h2>
+        <fieldset class="post">
+            <input class="btn" type="submit" name="post" value="Post Ontry">
+        </fieldset>
+    </form>
+</section>

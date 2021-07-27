@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+
+<a routerLink="/message" routerLinkActive="active"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+
+
+<section class="ontry">
+    <!-- ontry bilgileri çekilecek -->
+    <h1>TITLE</h1>
+    <fieldset class="post">
+        <div class="rectangle"> Praesent dapibus, neque id cursus faucibus,
+            tortor neque egestas auguae, eu vulputate magna eros eu erat.
+            Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
+            facilisis luctus, metus. </div>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+    </fieldset>
+    <form novalidate [formGroup]="commentForm" #cForm="ngForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field class="write-comment">
+            <label><textarea rows="5" cols="60" matInput formControlName="comment" name="comment"
+                    required></textarea></label>
+            <input class="btn" type="submit" name="comment" value="Comment">
+
+        </mat-form-field>
+    </form>
+</section>
+
+<section class="send-message">
+    <form>
+        <fieldset class="send-message">
+            <label>
+                Send message to @username <br>
+                <textarea rows="5" cols="60" name="comment" required></textarea></label>
+            <input class="btn" type="submit" name="send" value="Send">
+        </fieldset>
+    </form>
+</section>
+
+<section class="report-user">
+    <form>
+        <fieldset class="report-user">
+            <label>
+                Explain the problem about ontry <br>
+                <textarea rows="5" cols="60" name="comment" required></textarea></label>
+            <input class="btn" type="submit" name="report" value="Report">
+        </fieldset>
+    </form>
+</section>

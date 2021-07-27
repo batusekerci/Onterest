@@ -1,0 +1,215 @@
+
+    .fa-home {
+        position: absolute;
+        left: 140px;
+        top: 45px;
+        color: #A5BEFF;
+        font-size: 25px;
+      }
+      .fa-question {
+        position: absolute;
+        left: 190px;
+        top: 45px;
+        color: #A5BEFF;
+        font-size: 25px;
+      }
+      .search-form {
+        position: absolute;
+        top: 40px;
+        left: 230px;
+      }
+      .search-form input {
+        font-family: Spartan,serif;
+        font-size: 15px;
+        width: 230px;
+        height: 30px;
+        display: inline-block;
+        border: none;
+        background-color: #F3F6F9;
+        border-radius: 10px;
+      }
+      .fa-envelope-o {
+        position: absolute;
+        left: 1550px;
+        top: 45px;
+        color: #A5BEFF;
+        font-size: 25px;
+      }
+      .fa-gear {
+        position: absolute;
+        left: 1600px;
+        top: 45px;
+        color: #A5BEFF;
+        font-size: 25px;
+      }
+  
+      div.username {
+        position: absolute;
+        left: 1650px;
+        top: 45px;
+        color: black;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+      .fa-exclamation-circle {
+        position: absolute;
+        left: 140px;
+        top: 850px;
+        color: red;
+        font-size: 25px;
+      }
+      div.top {
+        position: absolute;
+        top: 80px;
+        left: 130px;
+      }
+      div.side {
+        position: absolute;
+        top: 80px;
+        left: 500px;
+      }
+      div.profile {
+        position: absolute;
+        top: 120px;
+        left: 400px;
+        color: #A5BEFF;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+      div.sc-management {
+        position: absolute;
+        top: 170px;
+        left: 177px;
+        color: #D1CFCF;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+      div.mmbr-management {
+        position: absolute;
+        top: 220px;
+        left: 210px;
+        color: #D1CFCF;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+      div.rep-management {
+        position: absolute;
+        top: 270px;
+        left: 230px;
+        color: #A5BEFF;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+      div.q-management {
+        position: absolute;
+        top: 320px;
+        left: 147px;
+        color: #D1CFCF;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+  
+      div.logout {
+        position: absolute;
+        top: 850px;
+        left: 400px;
+        color: #D1CFCF;
+        font-family: Spartan,serif;
+        font-size: 22px;
+      }
+  
+      section {
+        margin: 100px 0 0 700px;
+        font-family: Spartan,serif;
+        background-color:white;
+        overflow: hidden;
+      }
+      fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: Spartan,serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        color: black;
+      }
+      .rep label {
+        color: black;
+        display: block;
+        font-family: Spartan,serif;
+        width: 474px;
+        height: 69px;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .rep select {
+        width: 319px;
+        height: 49px;
+        display: inline-block;
+        border: none;
+        background-color: #F3F6F9;
+        border-radius: 20px;
+        font-size: 18px;
+      }
+  
+      .reason label {
+        color: black;
+        display: block;
+        font-family: Spartan,serif;
+        width: 474px;
+        height: 69px;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 300px;
+      }
+      .reason textarea {
+        width: 319px;
+        height: 319px;
+        display: inline-block;
+        border: none;
+        background-color: #F3F6F9;
+        border-radius: 20px;
+        font-size: 18px;
+      }
+  
+      .action label {
+        color: black;
+        display: block;
+        font-family: Spartan,serif;
+        width: 474px;
+        height: 69px;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      .action select {
+        width: 319px;
+        height: 49px;
+        display: inline-block;
+        border: none;
+        background-color: #F3F6F9;
+        border-radius: 20px;
+        font-size: 18px;
+      }
+  
+      .save .btn {
+        margin-top: 100px;
+        background: #A5BEFF;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        font-family: Spartan,serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        padding: 4px 15px;
+        border-radius: 10px;
+      }
+  

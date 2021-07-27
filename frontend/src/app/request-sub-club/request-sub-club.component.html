@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<a href="#link"> <i class="fa fa-envelope-o"></i></a>
+<a href="#link"> <i class="fa fa-gear"></i></a>
+<a href="#link"> <i class="fa fa-exclamation-circle"></i></a>
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+
+
+<section class="form">
+    <form novalidate [formGroup]="requestSubClubForm" #reqSubClubForm="ngForm" (ngSubmit)="onSubmit()">
+        <h1>Request Sub-club</h1><br>
+        <mat-form-field class="club">
+            <label for="club">Club<br>
+                <mat-select id="club" name="club" required>
+                    <option value="" disabled selected>choose a club</option>
+                    <option value="book">Book</option>
+                    <option value="movie">Movie</option>
+                    <option value="cars">Cars</option>
+                </mat-select>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="name">
+            <label>
+                Sub-club Name Suggestion
+                <br><input matInput formControlName="subClubName" type="text" name="name" required>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="reason">
+            <label>
+                Reasoning<br>
+                <textarea name="reason" matInput formControlName="reason" rows="5" cols="60" required></textarea>
+            </label><br>
+        </mat-form-field>
+        <fieldset class="request">
+            <input class="btn" type="submit" name="request" value="Request Sub-club">
+        </fieldset>
+    </form>
+</section>

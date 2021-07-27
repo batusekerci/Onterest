@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<a routerLink="/message" routerLinkActive="active"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+<div class="side" style="width:0px;height:800px;border:1px solid #D1CFCF;"></div>
+<div class="profile"> <a routerLink="/subClubAdminProfile" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Profile </a></div>
+<div class="create-event"> Create Event</div>
+<div class="rep-management"> <a routerLink="/scAdminReportManagement" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Report Management</a></div>
+<div class="logout"> <a routerLink="/login" routerLinkActive="active" style="color: #A5BEFF; text-decoration: none;">
+        log out</a></div>
+
+<section class="form">
+    <form novalidate [formGroup]="createEventForm" #cEventForm="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="name">
+            <h1>Create Event</h1><br>
+            <label>
+                Event Name*
+                <br><input matInput formControlName="eventName" type="text" name="name" required>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="exp">
+            <label>
+                Event Explanation<br>
+                <textarea matInput formControlName="explanation" rows="5" cols="20" name="description">
+             </textarea>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="info">
+            <label>
+                Event Date *
+                <br><input type="date" matInput formControlName="eventDate" name="date" required>
+            </label><br>
+            <label>
+                Event Time
+                <br><input type="text" matInput formControlName="time" name="time">
+            </label><br>
+            <label>
+                Event Link
+                <br><input type="text" matInput formControlName="link" name="link">
+            </label><br>
+        </mat-form-field>
+        <fieldset class="save">
+            <input class="btn" type="submit" name="create" value="create">
+        </fieldset>
+    </form>
+</section>

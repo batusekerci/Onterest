@@ -1,0 +1,260 @@
+
+        .fa-home {
+            position: absolute;
+            left: 140px;
+            top: 45px;
+            color: #A5BEFF;
+            font-size: 25px;
+        }
+
+        .fa-question {
+            position: absolute;
+            left: 190px;
+            top: 45px;
+            color: #A5BEFF;
+            font-size: 25px;
+        }
+
+        .search-form {
+            position: absolute;
+            top: 40px;
+            left: 230px;
+        }
+
+        .search-form input {
+            font-family: Spartan, serif;
+            font-size: 15px;
+            width: 230px;
+            height: 30px;
+            display: inline-block;
+            border: none;
+            background-color: #F3F6F9;
+            border-radius: 10px;
+        }
+
+        .fa-envelope-o {
+            position: absolute;
+            left: 1550px;
+            top: 45px;
+            color: #A5BEFF;
+            font-size: 25px;
+        }
+
+        .fa-gear {
+            position: absolute;
+            left: 1600px;
+            top: 45px;
+            color: #A5BEFF;
+            font-size: 25px;
+        }
+
+        div.username {
+            position: absolute;
+            left: 1650px;
+            top: 45px;
+            color: black;
+            font-family: Spartan, serif;
+            font-size: 22px;
+        }
+
+        .fa-exclamation-circle {
+            position: absolute;
+            left: 140px;
+            top: 850px;
+            color: red;
+            font-size: 25px;
+        }
+
+        div.top {
+            position: absolute;
+            top: 80px;
+            left: 130px;
+        }
+
+        section {
+            margin: 100px 0 0 100px;
+            font-family: Spartan, serif;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        section.posts {
+            position: absolute;
+            top: 20px;
+            left: 150px;
+            font-family: Spartan, serif;
+            background-color: white;
+            overflow: hidden;
+        }
+        h1 {
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            color: #A5BEFF;
+        }
+
+        .post1 .rectangle {
+            height: 150px;
+            width: 600px;
+            margin-bottom: 10px;
+            background-color: #fca5ff;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 20px;
+            border-color: #fca5ff;
+            display: inline-flex;
+            align-items: flex-start;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: white;
+        }
+
+        .post1 .ontry {
+            position: absolute;
+            top: 200px;
+            left: 25px;
+            font-size: 18px;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            color: white;
+        }
+
+        .post1 .user {
+            position: absolute;
+            top: 305px;
+            left: 510px;
+            font-size: 18px;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            color: white;
+        }
+
+        .post2 .rectangle {
+            margin-top: 40px;
+            height: 150px;
+            width: 600px;
+            margin-bottom: 10px;
+            background-color: #ffa5a5;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 20px;
+            border-color: #ffa5a5;
+            display: inline-flex;
+            align-items: flex-start;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: white;
+        }
+
+        .post2 .ontry {
+            position: absolute;
+            top: 440px;
+            left: 25px;
+            font-size: 18px;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            color: white;
+        }
+
+        .post2 .user {
+            position: absolute;
+            top: 545px;
+            left: 510px;
+            font-size: 18px;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            color: white;
+        }
+
+        .post-btn .button {
+            margin-top: 100px;
+            height: 50px;
+            width: 150px;
+            background-color: #A5BEFF;
+            border-radius: 10px;
+            border-color: #A5BEFF;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: white;
+        }
+
+        section.comments {
+            position: absolute;
+            top: 160px;
+            left: 900px;
+            font-family: Spartan, serif;
+            background-color: white;
+            overflow: hidden;
+        }
+        .comment1 .rectangle {
+            height: 150px;
+            width: 300px;
+            margin-bottom: 10px;
+            background-color: #f8c5fa;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 20px;
+            border-color: #f8c5fa;
+            display: inline-flex;
+            align-items: flex-start;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: white;
+        }
+        .comment2 .rectangle {
+            margin-top: 40px;
+            height: 150px;
+            width: 300px;
+            margin-bottom: 10px;
+            background-color: #fbc4c4;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 20px;
+            border-color: #fbc4c4;
+            display: inline-flex;
+            align-items: flex-start;
+            font-family: Spartan, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: white;
+        }
+
+        .search-member {
+            position: absolute;
+            top: 80px;
+            left: 1500px;
+        }
+
+        .search-member input {
+            font-family: Spartan, serif;
+            font-size: 15px;
+            width: 230px;
+            height: 30px;
+            display: inline-block;
+            border: none;
+            background-color: #F3F6F9;
+            border-radius: 10px;
+        }
+

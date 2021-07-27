@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<a routerLink="/message" routerLinkActive="active"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+<div class="side" style="width:0px;height:800px;border:1px solid #D1CFCF;"></div>
+<div class="profile" routerLink="/subClubAdminProfile" routerLinkActive="active"> <a href="#link"
+        style="color: #D1CFCF; text-decoration: none;"> Profile </a></div>
+<div class="create-event"> <a routerLink="/createEvent" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Create Event</a></div>
+<div class="rep-management"> Report Management</div>
+<div class="logout"> <a routerLink="/login" routerLinkActive="active" style="color: #A5BEFF; text-decoration: none;">
+        log out</a></div>
+
+
+<section class="form">
+    <form>
+        <fieldset class="rep">
+            <h1>Report Management</h1><br>
+            <label for="rep">Reported User(s)<br>
+                <select id="rep" name="action" required>
+                    <option value="" disabled selected>@reported_member</option>
+                    <option value="rep1">reported_1</option>
+                    <option value="rep1">reported_2</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="reason">
+            <label>
+                Reason<br>
+                <textarea rows="5" cols="60" name="reason" required>
+             </textarea>
+            </label><br>
+        </fieldset>
+        <fieldset class="action">
+            <label for="action">Action<br>
+                <select id="action" name="action" required>
+                    <option value="" disabled selected>choose an action</option>
+                    <option value="delete">Ban for a day</option>
+                    <option value="delete">Ban for three days</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="save">
+            <input class="btn" type="submit" name="save" value="save">
+        </fieldset>
+    </form>
+</section>

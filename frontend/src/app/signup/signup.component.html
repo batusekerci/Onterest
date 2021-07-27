@@ -1,0 +1,54 @@
+<img src="https://i.imgur.com/WJ8ZHvz.png" src="../../assets/images/logo.png"
+  style="position:absolute; top:50px; left: 615px;" />
+
+<form novalidate [formGroup]="signupForm" #sform="ngForm" (ngSubmit)="onSubmit()">
+
+  <br><br><br>
+  <h1>Sign Up</h1>
+  <h2>Enter your details to join onterest.</h2>
+
+  <mat-form-field class="account-info">
+    <label>
+      username*
+      <br><input matInput formControlName="username" type="text" name="username" required>
+    </label><br>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="account-info">
+    <label>
+      email*
+      <br><input matInput formControlName="email" type="email" name="email" required>
+    </label><br>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="account-info">
+    <label>
+      date of birth*
+      <br> <input matInput type="date" formControlName="birthDate" name="date_of_birth" required>
+    </label><br>
+  </mat-form-field>
+  <br>
+  <mat-form-field class="account-info">
+    <label>
+      password*
+      <br> <input matInput type="password" formControlName="password" name="password" required>
+    </label><br>
+  </mat-form-field>
+  <br>
+  <!-- <mat-form-field class="account-info">
+    <label>
+      confirm password*
+      <br> <input matInput type="password" formControlName="confirm_password" name="confirm_password" required>
+    </label><br>
+  </mat-form-field> -->
+
+  <h3 style="text-align: center;">
+    <br><br>Already have an account? <a mat-button routerLink="/login" routerLinkActive="active"
+      style="color:#A5BEFF">Log in!</a>
+  </h3>
+
+  <fieldset class="account-action">
+    <button type="submit" mat-button class="btn" value="Sign up">Submit</button>
+  </fieldset>
+
+</form>

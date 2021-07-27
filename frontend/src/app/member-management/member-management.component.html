@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+
+<mat-form-field class="search-form" action="search">
+    <!-- TODO: search inputu bağla -->
+    <input matInput type="text" formControlName="searchInput" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</mat-form-field>
+
+<a href="#link"> <i class="fa fa-envelope-o"></i></a>
+<a href="#link"> <i class="fa fa-gear"></i></a>
+<a href="#link"> <i class="fa fa-exclamation-circle"></i></a>
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+<div class="side" style="width:0px;height:800px;border:1px solid #D1CFCF;"></div>
+<div class="profile"> <a routerLink="/profile" routerLinkActive="active" style="color: #D1CFCF; text-decoration: none;">
+        Profile</a></div>
+<div class="sc-management"> <a routerLink="/adminScManagement" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Social Club Management</a>
+</div>
+<div class="mmbr-management"> Member Management </div>
+<div class="rep-management"> <a routerLink="/manageReport" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Report Management</a></div>
+<div class="q-management"> <a routerLink="/questManagement" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Questionnaire Management</a>
+</div>
+<div class="logout"> <a routerLink="/login" routerLinkActive="active" style="color: #A5BEFF; text-decoration: none;">
+        log out</a></div>
+
+<section class="form">
+
+    <mat-form-field>
+        <h1> Member Management</h1><br>
+        <label>
+            User
+            <br><input matInput type="text" name="user" formControlName="username" placeholder="@username" required>
+        </label><br>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="action">
+        <label for="action">Action<br>
+            <select id="action" name="action" required>
+                <!--TODO: action verisine buradaki optionu bağla -->
+                <option value="" disabled selected>choose an action</option>
+                <option value="delete">Delete user</option>
+            </select>
+        </label>
+    </mat-form-field>
+    <fieldset class="save">
+        <input class="btn" type="submit" name="save" value="save">
+    </fieldset>
+
+</section>

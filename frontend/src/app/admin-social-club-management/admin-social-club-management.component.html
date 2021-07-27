@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+<a href="#link"> <i class="fa fa-envelope-o"></i></a>
+<a href="#link"> <i class="fa fa-gear"></i></a>
+<a href="#link"> <i class="fa fa-exclamation-circle"></i></a>
+
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+<div class="side" style="width:0px;height:800px;border:1px solid #D1CFCF;"></div>
+<div class="profile"> <a routerLink="/profile" routerLinkActive="active" style="color: #D1CFCF; text-decoration: none;">
+        Profile</a></div>
+<div class="sc-management"> Social Club Management </div>
+<div class="mmbr-management"> <a routerLink="/memberManagement" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Member Management</a>
+</div>
+<div class="rep-management"> <a routerLink="/manageReport" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Report Management</a></div>
+<div class="q-management"> <a routerLink="/questManagement" routerLinkActive="active"
+        style="color: #D1CFCF; text-decoration: none;"> Questionnaire Management</a>
+</div>
+<div class="logout"> <a routerLink="/login" routerLinkActive="active" style="color: #A5BEFF; text-decoration: none;">
+        log out</a></div>
+
+<section class="form">
+    <form>
+        <fieldset class="club">
+            <h1>Social Club Management</h1><br>
+            <label for="clubs">Club<br>
+                <select id="clubs" name="clubs" required>
+                    <option value="" disabled selected>choose a club</option>
+                    <option value="book">Book</option>
+                    <option value="movie">Movie</option>
+                    <option value="cars">Cars</option>
+                </select>
+            </label><br>
+        </fieldset>
+        <fieldset class="sub-club">
+            <label for="sub-clubs">Sub-club<br>
+                <select id="sub-clubs" name="sub-clubs">
+                    <option value="" disabled selected>choose a sub-club</option>
+                    <option value="crime">Crime</option>
+                    <option value="romcom">Romantic Comedy</option>
+                    <option value="Honda">Honda</option>
+                </select>
+            </label><br>
+        </fieldset>
+        <fieldset class="action">
+            <label for="action">Action<br>
+                <select id="action" name="action" required>
+                    <option value="" disabled selected>choose an action</option>
+                    <option value="delete">Delete</option>
+                </select>
+            </label><br>
+        </fieldset>
+        <fieldset class="save">
+            <input class="btn" type="submit" name="save" value="save">
+        </fieldset>
+    </form>
+</section>
+<section class="form2">
+    <form>
+
+        <fieldset class="c-name">
+            <h2>Create New Club</h2><br>
+            <label>
+                Club Name
+                <br><input type="text" name="name" required>
+            </label><br>
+        </fieldset>
+        <fieldset class="s-name">
+            <label>
+                Sub-club Name
+                <br><input type="text" name="name" placeholder="optional">
+            </label><br>
+        </fieldset>
+        <fieldset class="exp">
+            <label>
+                Explanation<br>
+                <textarea rows="5" cols="60" name="description">
+             </textarea>
+            </label><br>
+        </fieldset>
+        <fieldset class="create">
+            <input class="btn" type="submit" name="create" value="create">
+        </fieldset>
+    </form>
+</section>

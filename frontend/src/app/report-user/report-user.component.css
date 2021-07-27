@@ -1,0 +1,77 @@
+
+html {
+  width: 1920px;
+  height: 960px;
+}
+section {
+  margin: 200px 0 0 740px;
+  font-family: Spartan,serif;
+  background-color:white;
+  overflow: hidden;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: Spartan,serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: black;
+  margin-bottom: 10px;
+}
+.info label {
+  color: black;
+  display: block;
+  font-family: Spartan,serif;
+  height: 69px;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.info input {
+  width: 440px;
+  height: 55px;
+  display: inline-block;
+  border: none;
+  background-color: #F3F6F9;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.reason label {
+  color: black;
+  display: block;
+  font-family: Spartan,serif;
+  width: 474px;
+  height: 69px;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 300px;
+}
+.reason textarea {
+  width: 500px;
+  height: 350px;
+  display: inline-block;
+  border: none;
+  background-color: #F3F6F9;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.report .btn {
+  margin-top: 10px;
+  background: #A5BEFF;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-family: Spartan,serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  padding: 8px 15px;
+  border-radius: 10px;
+}

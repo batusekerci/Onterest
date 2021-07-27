@@ -1,0 +1,25 @@
+<img src="https://i.imgur.com/WJ8ZHvz.png" src="../../assets/images/logo.png"
+    style="position:absolute; top:50px; left: 615px;" />
+<br><br>
+<section class="form">
+    <form novalidate [formGroup]="reportUserForm" #repuserform="ngForm" (ngSubmit)="onSubmit()">
+        <mat-form-field class="info">
+            <h1>Report User</h1><br>
+            <label>
+                user
+                <br><input matInput type="text" formControlName="username" name="user" placeholder="@username" required>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="reason">
+            <label>
+                Explain your reasoning<br>
+                <textarea matInput formControlName="reason" rows="5" cols="60" name="reason">
+             </textarea>
+            </label>
+        </mat-form-field>
+        <fieldset class="report">
+            <input class="btn" type="submit" name="report" value="report">
+            <!-- Submitten sonra anasayfaya yönlendirme yapılacak -->
+        </fieldset>
+    </form>
+</section>

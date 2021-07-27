@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a href="#link"> <i class="fa fa-home"></i></a>
+<a href="#link"> <i class="fa fa-question"></i></a>
+
+<form class="search-form" action="search">
+
+    <input type="text" matInput placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+
+</form>
+
+<a href="#link"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+<div class="username"><a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+
+
+<section class="messages"><br><br><br><br>
+    <!-- Mevcut mesajlar burada sergilenecek -->
+    <h1> Your Messages</h1>
+    <fieldset class="message1"><br>
+        <div class="rectangle"> Message</div>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+
+    </fieldset>
+    <fieldset class="message2"><br><br>
+        <div class="rectangle"> Message</div>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+
+    </fieldset>
+</section>
+<section class="sendMessage">
+    <form novalidate [formGroup]="messageForm" #mesForm="ngForm" (ngSubmit)="onSubmit()">
+        <br><br><br>
+        <h2>Send Message</h2>
+        <mat-form-field class="sendTo">
+            <label>
+                Send Message to
+                <br><input matInput type="text" name="name" formControlName="receiver" placeholder="username" required>
+            </label>
+        </mat-form-field><br>
+        <mat-form-field class="messageHere">
+            <label>
+                Write your message here<br>
+                <textarea name="messageText" matInput formControlName="message" required></textarea>
+            </label>
+        </mat-form-field>
+        <fieldset class="send">
+            <input class="btn" type="submit" name="request" value="send message">
+        </fieldset>
+    </form>
+</section>

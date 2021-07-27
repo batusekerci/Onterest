@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<a routerLink="/clubDashboard" routerLinkActive="active"> <i class="fa fa-home"></i></a>
+<a routerLink="/questionnaire" routerLinkActive="active"> <i class="fa fa-question"></i></a>
+
+<form class="search-form" action="search">
+    <input type="text" placeholder="search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+
+<a routerLink="/message" routerLinkActive="active"> <i class="fa fa-envelope-o"></i></a>
+<a routerLink="/userProfile" routerLinkActive="active"> <i class="fa fa-gear"></i></a>
+<a routerLink="/bugReport" routerLinkActive="active"> <i class="fa fa-exclamation-circle"></i></a>
+<div class="username"> <a href="#link" style="color: black; text-decoration: none;"> username</a></div>
+<div class="top" style="width:1656px;height:0px;border:1px solid #D1CFCF;"></div>
+
+
+<section class="posts">
+    <br>
+    <h1>Sub-club</h1><br><br><br><br>
+    <fieldset class="post1">
+        <div class="rectangle"> Adventure books are very nice </div>
+        <div class="ontry"> I love adventure books very much.</div>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+    </fieldset>
+    <fieldset class="post2">
+        <div class="rectangle"> TITLE </div>
+        <div class="ontry"> </div>
+        <a href="#link" style="text-decoration: none; ">
+            <div class="user"> @username</div>
+        </a>
+    </fieldset>
+    <fieldset class="post-btn">
+        <a routerLink="/postOntry" routerLinkActive="active" style="text-decoration: none; ">
+            <div class="button"> Post Ontry </div>
+        </a>
+    </fieldset>
+</section>
+
+<section class="comments">
+    <fieldset class="comment1">
+        <div class="rectangle"> I like it! <br><br> </div>
+    </fieldset>
+    <fieldset class="comment2">
+        <div class="rectangle"> comment1 <br><br> comment2 </div>
+    </fieldset>
+</section>
+
+<section class="search-member">
+    <form novalidate [formGroup]="searchMemberForm" #searchMemForm="ngForm" (ngSubmit)="onSubmit()" class="search"
+        action="search">
+        <mat-form-field>
+            <input matInput type="text" formControlName="username" placeholder="search member.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </mat-form-field>
+    </form>
+</section>

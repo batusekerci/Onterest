@@ -1,0 +1,18 @@
+<img src="https://i.imgur.com/WJ8ZHvz.png" src="../../assets/images/logo.png"
+    style="position:absolute; top:50px; left: 615px;" /><br><br>
+<section class="form">
+    <form novalidate [formGroup]="bugReportForm" #bugRepForm="ngForm" (ngSubmit)="onSubmit()">
+        <h1>What is the problem? </h1><br>
+        <mat-form-field class="problem">
+
+            <label>
+                Explain the problem briefly<br><br>
+                <textarea matInput formControlName="message" name="description" required>
+             </textarea>
+            </label>
+        </mat-form-field>
+        <fieldset class="report">
+            <input class="btn" type="submit" name="report" value="send report">
+        </fieldset>
+    </form>
+</section>

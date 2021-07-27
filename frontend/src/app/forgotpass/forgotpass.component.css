@@ -1,0 +1,93 @@
+
+*,
+*:before,
+*:after {
+   margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 border: none;
+}
+form {
+  font-family: Spartan;
+  width: 1920px;
+	height: 1080px;
+	background-color:white;
+	overflow: hidden;
+}
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 193px 0 0 730px;
+	font-family: Spartan;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+  color: black;
+}
+input {
+  width: 164px;
+  height: 57px;
+  display: inline-block;
+  border: none;
+  background-color: #A5BEFF;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.account-info {
+  margin: 22px 0 0 726px;
+}
+
+::ng-deep .mat-form-field-wrapper{
+  margin-bottom: -4.75em;
+}
+
+.account-info label {
+  color: black;
+  display: block;
+  font-family: Spartan;
+  width: 474px;
+	height: 69px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Spartan;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+  margin-bottom: 20px;
+
+}
+.account-info input {
+  background: #F3F6F9;
+  color: #636466;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 6px;
+  width: 100%;
+
+}
+.account-action {
+   margin: 20px 0 0 726px;
+
+}
+.account-action .btn {
+  background: #A5BEFF;
+  color: white;
+  cursor: pointer;
+  text-align: middle;
+	font-family: Spartan;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+  width: 318px;
+	height: 57px;
+  padding: 8px 16px;
+}
+.account-action label {
+  color: white;
+  font-size: 12px;
+  float: left;
+  margin: 10px 0 0 20px;
+}
